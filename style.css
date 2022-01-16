@@ -31,3 +31,51 @@ section {
 .section-heading {
   background: linear-gradient(to left, #7a7a7a 30%, #fff, #7a7a7a 30%);
 }
+
+.text-content p {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3s steps(40, end), blink-caret 1s step-end;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.imageku {
+  -webkit-animation: spin 1s linear;
+  -moz-animation: spin 1s linear;
+  transform-style: preserve-3d;
+  animation: 3d spin 1s linear;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
