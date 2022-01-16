@@ -36,8 +36,8 @@ section {
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: 0.1em;
-  animation: typing 3s steps(40, end), blink-caret 1s step-end;
+  letter-spacing: normal;
+  animation: typing 3s steps(50, end), blink-caret 1s step-end;
 }
 @keyframes typing {
   from {
