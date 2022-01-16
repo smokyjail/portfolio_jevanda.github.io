@@ -1,0 +1,33 @@
+.page-heading {
+  position: relative;
+  padding: 3rem 0rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-position: center center;
+}
+.page-heading:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.page-heading .container {
+  position: relative;
+  z-index: 2;
+}
+.page-heading .text-content h1 {
+  color: #fff;
+}
+.page-heading .text-content p {
+  color: #fff;
+}
+section {
+  padding: 5rem 0rem;
+}
+
+.section-heading {
+  background: linear-gradient(to left, #7a7a7a 30%, #fff, #7a7a7a 30%);
+}
