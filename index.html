@@ -204,21 +204,32 @@
             </div>
             <form name="my-portfolio-contact-form">
               <div class="input-group mb-3 shadow-sm">
-                <input type="text" class="form-control" placeholder="Full Name" name="name" data-aos="fade" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true" />
+                <input type="text" class="form-control" placeholder="Full Name" name="name" data-aos="fade" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true" required />
               </div>
               <div class="input-group mb-3 shadow-sm">
-                <input type="email" class="form-control" placeholder="E-mail" name="email" data-aos="fade" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true" />
+                <input type="email" class="form-control" placeholder="E-mail" name="email" data-aos="fade" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true" required />
               </div>
               <div class="input-group mb-3 shadow-sm">
-                <input type="text" class="form-control" placeholder="Phone Number" name="phone" data-aos="fade" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true" />
+                <input type="text" class="form-control" placeholder="Phone Number" name="phone" data-aos="fade" data-aos-delay="150" data-aos-duration="1000" data-aos-once="true" required />
               </div>
               <div class="form-floating mb-3 shadow-sm">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px" name="message" data-aos="fade" data-aos-delay="250" data-aos-duration="1000" data-aos-once="true"></textarea>
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea"
+                  style="height: 200px"
+                  name="message"
+                  data-aos="fade"
+                  data-aos-delay="250"
+                  data-aos-duration="1000"
+                  data-aos-once="true"
+                  required
+                ></textarea>
                 <label for="floatingTextarea" style="color: rgb(122, 122, 122)">Message</label>
               </div>
               <button type="submit" class="btn btn-primary bg-gradient btn-send mb-3" data-aos="fade" data-aos-duration="1000" data-aos-once="true">Send Message</button>
 
-              <button class="btn btn-primary bg-gradient btn-loading d-none" type="button" disabled>
+              <button class="btn btn-primary bg-gradient btn-loading mb-3 d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
               </button>
